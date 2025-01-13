@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <div class="white-band"></div>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-overlay">
+                <button class="close-btn" onclick="document.getElementById('menu-toggle').checked = false;">&times;</button>
+                <ul class="nav-links">
+                    <li><a href="#">Cerrar Sesión</a></li>
+                    <li><a href="#">Datos del usuario</a></li>
+                    <li><a href="#">Consultar mis calificaciones</a></li>
+                    <li><a href="#">Entrevista Inicial</a></li>
+                    <li><a href="#">Pagos</a></li>
+                    <li><a href="#">Agenda</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="welcome-message">¡Bienvenido a tu página!</h1>
+        <p class="student-name">JUAN HERNANDEZ HERNANDEZ</p>
+        <p class="semester">ALUMNO DEL 4to. CUATRIMESTRE, GRUPO B</p>
+        <p class="date">SEPTIEMBRE-DICIEMBRE 2023</p>
+    </div>
+
+    <footer class="footer">
+        <p>Carretera Huejutla-Chalahuiyapa S/N, C.P. 43000, Huejutla de Reyes, Hidalgo</p>
+        <p>Teléfonos: 786 2782382 al 91</p>
+        <p>Email: rectoria@uthh.edu.mx</p>
+        <p>Universidad Tecnológica de la Huasteca Hidalguense</p>
+    </footer>
+</body>
+
+</html>

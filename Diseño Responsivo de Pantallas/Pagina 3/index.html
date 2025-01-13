@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ecf0f1;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2980b9;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #bdc3c7;
+            font-size: 14px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        select:focus, input[type="text"]:focus {
+            border-color: #2980b9;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #21618c;
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin-top: 20px;
+                padding: 20px;
+                box-shadow: none; /* Quitar sombra en móviles */
+                border-radius: 8px; /* Mantener bordes redondeados */
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        /* Efecto para la sombra de la caja */
+        @media (max-width: 400px) {
+            .container {
+                box-shadow: none;
+                padding: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recuperar Contraseña</h1>
+        <p>Con este proceso podrás recuperar tu contraseña.</p>
+        <form>
+            <div class="form-group">
+                <label for="tipo-sesion">Selecciona tu tipo de sesión:</label>
+                <select id="tipo-sesion" required>
+                    <option value="" disabled selected hidden>Elija un tipo...</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente">Docente</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="usuario">Introduce tu matrícula o clave de docente:</label>
+                <input type="text" id="usuario" placeholder="Matrícula o clave de docente" required>
+            </div>
+
+            <button type="submit">Siguiente</button>
+        </form>
+    </div>
+</body>
+</html>
+
